@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <script src="modal.js"></script>
+</head>
+<body>
+  <style>
+    div {
+      background-color: red;
+    }
+  </style>
+  <button id="abrir">Abrir modal</button>
+  <mi-modal title="Mi titulo del modal" visible>
+    <div>
+      <img src="img/1.jpg" alt="" srcset="">
+      <p>Contenido no predefinido</p>
+    </div>
+  </mi-modal>
+
+  <script>
+    document.querySelector("#abrir").addEventListener("click", e => {
+      document.querySelector("mi-modal").setAttribute("visible", "");
+    });
+  </script>
+</body>
+
+</html>
