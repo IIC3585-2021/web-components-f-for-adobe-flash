@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <script src="sell-item.js"></script>
+</head>
+<body>
+  <style>
+    div {
+      background-color: red;
+    }
+  </style>
+  <button id="abrir">Abrir modal</button>
+  <!-- <sell-item 
+  title="GPU ASI BIEN CABRONA" 
+  photo="img/1.png" 
+  normal-price=1000000
+  discount-price=800000
+  discount= 20
+  rating= 4
+  visible /> -->
+
+  <sell-item
+  title="POLERA DEL TIO ELON" 
+  photo="img/2.jpg" 
+  normal-price=20000
+  discount-price=10000
+  discount= 50
+  rating= 5
+  visible />
+
+  <script>
+    document.querySelector("#abrir").addEventListener("click", e => {
+      document.querySelector("sell-item").setAttribute("visible", "");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="sell-item.js"></script>
+    <script type="module" src="sell-item-lit.js"></script>
+    <script type="module" src="todolist.js"></script>
+    <script type="module" src="todolistlit.js"></script>
+
+</head>
+<body>
+    <style>
+        div {
+        display: flex;
+        flex-direction: row;
+        }
+    </style>
+
+    <h1>Sell Item WebComponent</h1>
+
+    <div id="global">
+        <sell-item
+            title="GPU ASI BIEN CABRONA"
+            photo="img/1.jpg"
+            normal-price=1000000
+            discount-price=800000
+            discount= 20
+            rating= 4
+        >
+        </sell-item>
+
+        <sell-item
+            title="POLERA DEL TIO ELON"
+            photo="img/2.jpg"
+            normal-price=20000
+            discount-price=10000
+            discount= 50
+            rating= 5
+        >
+        </sell-item>
+    </div>
+
+    <h1>Sell Item LitElement</h1>
+
+    <sell-item-view></sell-item-view>
+
+    <todo-list item1="primera" item2="segunda" item3="tercera" promt="Add new list item" titulo="TodoList WebComponent"></todo-list>
+
+    <todo-view></todo-view>
+
+
+
+</body>
+
+</html>
