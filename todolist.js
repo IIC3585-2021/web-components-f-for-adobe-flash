@@ -1,6 +1,5 @@
 import 'https://cdn.skypack.dev/construct-style-sheets-polyfill';
 
-
 const styles = /*css*/`
 .single-item {
     font-family: 'Arial', sans-serif;
